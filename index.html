@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta char set="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        // let a = [];
+        // let b = [];
+        // console.warn(a==b)
+        // console.warn(a===b)
+    </script>
+    <script>
+        //2
+        // let a = [];
+        // let b = a ;
+        // console.warn(a==b);
+        // console.warn (a===b);
+    </script>
+    <script>
+        //3
+        // let a =[20];
+        // let b = [20]
+        // console.warn(a[0] == b[0]);
+        // console.warn(a[0] === b[0]);
+    </script>
+    <script>
+        //4
+        // let z = [ 1,2,3,4]
+        // let a = {name : 'huzail'};
+        // console.warn(...z)
+    </script>
+    <script>
+        //5
+        // console.warn(typeof NaN)
+    </script>
+    <script>
+        //6
+        // let date = 10 - - 10;
+        // console.warn(date);
+    </script>
+    <script>
+        //7
+        // const set  = new Set([1,1,2,3,4]);
+        // console.log(set);
+    </script>
+    <script>
+        //8
+        // let data = {name : 'Huzail' , class :'6'};
+        // console.warn(delete data.name);
+        // console.log(data);
+    </script>
+    <script>
+        //9
+        // const data = {name : 'Huzail'};
+        // console.warn(delete data) // cannot delete data instead
+        //can delete data property
+    </script>
+    <script>
+        //10
+        // const data = ['usairim' , 'huzail'];
+        // const [y]= data;
+        // console.log(y); //1st value will appear
+    </script>
+    <script>
+        //11
+        // const data = ['usairim' , 'huzail'];
+        //  const [,y]= data;
+        //  console.log(y); //to get second value
+    </script>
+    <script>
+        // const data = { name: 'huzail', age: 21, skill: 'js' };
+        // const { name } = data
+        // console.warn(name)//to getproperty without using .operator
+    </script>
+    <script>
+        //12
+        // let data = { name: 'huzail', age: 21, skill: 'js' }
+        // let info = { city: 'Karachi' };
+        // data = { ...data, ...info }
+        // console.warn(data)
+    </script>
+    <script>
+        //13
+        // let data = { name: 'huzail', age: 21, skill: 'js' }
+        // let info = { city: 'Karachi' };
+        // data = { data, ...info }
+        // console.warn(data)
+    </script>
+    <script>
+        //14
+        // let data = { name: 'huzail', age: 21, skill: 'js' }
+        // let info = { city: 'Karachi', skill: 'node' };
+        // data = { ...data, ...info }
+        // console.warn(data)
+    </script>
+    <script>
+        //15
+        // const name = 'Huzail'
+        // console.log(name()); //will not run no function 
+    </script>
+    <script>
+        //16
+        // const result = false || {} || null;
+        // console.log(result);
+    </script>
+    <script>
+        //17
+        // const result = null || false || '';
+        // console.log(result);
+    </script>
+    <script>
+        //18
+        // const result = [] || 0 || true;
+        // console.log(result);
+    </script>
+    <script>
+        //19
+        // console.warn(Promise.resolve(5))
+    </script>
+    <script>
+        //20
+        // JSON.parse();
+        //parse json into js
+    </script>
+    <script>
+        //21
+        // let name = 'huzail'
+        // function getName() {
+        //     console.log(name);
+        //     let name = 'Usairim';
+        // }
+        // getName()//error cause let used
+    </script>
+    <script>
+        //22
+        // let name = 'huzail'
+        // function getName() {
+        //     console.log(name);
+
+        // }
+        // getName()
+
+    </script>
+    <script>
+        //23
+        // console.log((x => x)('I love to program'));
+    </script>
+    <script>
+        //25
+        // function sumValue(x, y, z) {
+        //     return x + y + z;
+        // }
+        // console.log(sumValue(...[1, 2, 3]))
+    </script>
+    <script>
+        //26
+        // const name = 'Huzail Isani';
+        // console.log(!typeof name === 'object');
+        // console.log(!typeof name === 'string');
+
+    </script>
+    <script>
+        //27
+        // const name = "Huzail";
+        // const age = 21;
+        // console.log(isNaN(name));
+        // console.log(isNaN(age));
+    </script>
+    <script>
+        //28
+        // let person = { name: 'huzail' };
+        // Object.seal(person);
+        // person.name = 'usairim'
+        // console.warn(person);
+    </script>
+    <script>
+        //29 //remove first element
+        // let data = [2, 9, 0, 10];
+        // data.shift();
+        // console.warn(data)
+    </script>
+    <script>
+        //30 remove last
+        // let data = [2, 9, 0, 10];
+        // data.pop();
+        // console.warn(data)
+    </script>
+    <script>
+        //31
+        //check even or add
+        // var a = 31;
+        // a = a / 2;
+        // if (a == 0) {
+        //     console.log('Even');
+        // } else {
+        //     console.log('Odd');
+        // }
+    </script>
+    <script>
+        //32
+        // let data = { name: 'huzail' }
+        // delete data.name;
+        // console.warn(data)
+    </script>
+    <script>
+        //33
+        // let data = 'true'
+        // console.warn(typeof !data)
+
+    </script>
+    <script>
+        //34
+        // let data = 'true';
+        // console.warn(!!data)
+    </script>
+    <script>
+        //35
+        //difference b/w map and foreach function
+
+    </script>
+    <script>
+        //36
+        // let data = ['usairim', 'huzail'];
+        // delete data[1]
+        // console.warn(data.length)
+    </script>
+    <script>
+        //37
+        // let a = [1, 2, 3, 4]
+        // let b = [4, 5, 6]
+        // let c = [...a, ...b]
+        // console.warn(c)
+
+    </script>
+    <script>
+        //38
+        // let c = 4 ** 4
+        // console.warn(c)
+    </script>
+    <script>
+        //40
+        // let a = 2;
+        // let A = 30;
+        // console.warn(A)
+    </script>
+    <script>
+        //41
+        //let A10 = 'like';
+        // let 10A = 'okay';
+        // console.warn(A10)
+    </script>
+    <script>
+        //42
+        // let a = 'like'
+        // let b = 'like'
+        // console.warn(a === b);
+    </script>
+    <script>
+        //43
+        // let a = 1;
+        // let c = 2;
+        // console.warn(--c === a);
+    </script>
+    <script>
+        //44
+        // let a = 1;
+        // let b = 1
+        // let c = 2
+        // console.warn(a === b === --c)
+    </script>
+    <script>
+        //45
+        // console.log(3 * 3);
+        // console.log(3 ** 3);
+        // console.log(3 *** 3); // not usa ble
+    </script>
+    <script>
+        //46
+        // console.warn(a)
+        // var a;
+    </script>
+    <script>
+        //47
+        // console.warn(b)
+    </script>
+    <script>
+        //48
+        // console.warn([[[[]]]])
+    </script>
+    <script>
+        //49 how to find os name
+        //navigator.platform on console
+
+    </script>
+    <script>
+        //50
+        // let for = 100; // these cannot be used as variables or let
+    </script>
+    <script>
+        // function fruit (){
+        //     console.log(name);
+        //     console.log(price);
+        //      var name = 'apple'
+        //      let price = 20;}
+             // var can be used anywhere but let
+             //should be declared first than can be used
+
+    </script>
+    <script>
+        //52
+        // for (var i = 0; i < 3; i++) {
+        //     setTimeout(() => console.log(i), 1);
+        // } var and let difference
+    </script>
+    <script>
+        //53
+        // for (let i = 0; i < 3; i++) {
+        //     setTimeout(() => console.log(i), 1);
+        // }
+
+    </script>
+    <script>
+        //54
+        // console.warn(+true)
+        // console.warn(typeof +true)
+
+    </script>
+    <script>
+        //55
+    //     console.warn(!'huzail')
+    //     console.warn(typeof ('huzail'))
+    // </script>
+    <script>
+        //56
+        // let data = 'size';
+        // const bird = {
+        //     size: 'small'
+        // };
+        // console.warn(bird[data])
+        // console.warn(bird['size'])
+        // console.warn(bird.size)
+        // console.warn(bird.data)
+    </script>
+    <script>
+        //57
+        // let c = { name: 'huzail' }
+        // let d;
+        // d = c;
+        // c.name = 'usairim';
+        // console.log(d.name)
+    </script>
+    <script>
+        //58
+        // var x;
+        // var x = 10;
+        // console.log(x);
+
+    </script>
+    <script>
+        //59
+        // var x;
+        // let x = 10;
+        // console.log(x); cannot use let here
+
+    </script>
+    <script>
+        //60
+        // let a = 3; //numer
+        // let b = new Number(3);//oject
+        // console.log(a == b);
+        // console.log(a === b);
+    </script>
+    <script>
+        //61
+        // let name;
+        // nmae = {};//typeof
+        // console.log(name);
+
+
+    </script>
+    <script>
+        //62
+        // function fruit() {
+        //     console.log('woof!');
+        // }
+        // fruit.name = 'apple';
+        // fruit()
+    </script>
+    <script>
+        //63
+        // function sum(a, b) {
+        //     return a + b
+        // }
+        // console.log(sum(1, "2"));
+
+    </script>
+    <script>
+        //64
+        // let number = 0;
+        // console.log(number++);
+        // console.log(++number);
+        // console.log(number);
+    </script>
+    <script>
+        //65
+        // function getAge(...args) {
+        //     console.log(typeof args);
+        // }
+        // getAge(21)
+    </script>
+    <script>
+        //66 strict let and var etc
+        // function getAge() {
+            // 'use strict'
+        //     age = 21;
+        //     console.log(age);
+        // }
+        // getAge()
+
+    </script>
+    <script>
+        //67
+        // const sum = eval('10*10+5');
+        // console.warn(sum)
+    </script>
+    <script>
+        //68
+        //how long is cool secret accesible
+        // sessionStorage.setItem('cool-secret', 123)
+    </script>
+    <script>
+        //69
+        // const obj = { 1: 'a', 2: 'b', 3: 'c' }
+        // console.log(obj.hasOwnProperty('1'));
+        // console.log(obj.hasOwnProperty(1));
+    </script>
+    <script>
+        //70
+        // const obj = { a: 'one', b: 'two', a: "repeat" }
+        // console.log(obj);
+    </script>
+    <script>
+        //71
+        // for (let i = 1; i < 5; i++) {
+        //     if (i == 3) continue
+        //     console.log(i);
+        // }
+
+    </script>
+    <script>
+        //72
+        // const foo = () => console.log('First');
+        // const bar = () => setTimeout(() => console.log('second'));
+        // const baz = () => console.log('third');
+        // foo()
+        // bar()
+        // baz()
+    </script>
+
+    <!-- 73 -->
+    <!-- <div>
+        <div onclick="alert('1')">
+            <div onclick="alert(2)">
+                <button onclick="alert(3)">Click</button>
+            </div> -->
+    <script>
+        //74
+        // const person = { name: 'huzail' };
+        // function sayHi(age) {
+        //     return `${this.name} is ${age}`
+        // }
+        // console.log(sayHi.call(person, 21));
+        // console.log(sayHi.bind(person, 21));
+    </script>
+    <script>
+        //75
+        // function sayHi() {
+        //     return (() => 0)();
+        // }
+        // console.log(typeof sayHi());
+    </script>
+    <script>
+        //76
+        // function sayHi() {
+        //     return () => 0;
+        // }
+    </script>
+    <script>
+        //77
+        // console.log(typeof typeof 1);
+    </script>
+    <script>
+        //78
+        // const numbers = [1, 2, 3]
+        // numbers[6] = 11;
+        // console.log(numbers);
+    </script>
+    <script>
+        //79
+        // const numbers = [1, 2, 3]
+        // numbers[9] = numbers;
+        // console.log(numbers);
+
+    </script>
+    <script>
+        //80
+        //  Everything in js is primitive or objct
+    </script>
+    <script>
+        //81
+        // console.log(!!null);
+        // console.log(!!"");
+        // console.log(!!1);
+    </script>
+    <script>
+        //82
+        // console.warn(setInterval(() => console.log('HI'), 1000))
+        // console.warn(setInterval(() => console.log('HI'), 1000))
+        // console.warn(setInterval(() => console.log('HI'), 1000))
+    </script>
+    <script>
+        //83
+        // console.log(..."Huzail");
+    </script>
+    <script>
+        //84 race b/w both promise seconds wins because it was resolved early
+        // const firstPromise = new Promise((res, rej) => {
+        //     setTimeout(res, 500, 'one');
+        // })
+        // const secondPromise = new Promise((res, rej) => {
+        //     setTimeout(res, 100, 'two');
+        // })
+        // Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
+    </script>
+    <script>
+        //85
+        // let person = { name: 'Huzail' };
+        // const numbers = [person];
+        // person = null;
+        // console.log(numbers);
+    </script>
+    <script>
+        //86
+        // const person = {
+        //     name: "Batman",
+        //     age: 21
+        // }
+        // for (const item in person) {
+        //     console.log(item);
+        // }
+    </script>
+    <script>
+        //87
+        // let data = 3 + 4 + '5';
+        // console.log(typeof data);
+    </script>
+    <script>
+        //88
+        // console.log(typeof 3 + 4 + '5');
+    </script>
+    <script>
+        //89
+        // console.log(typeof (3 + 4 + + '5'));
+    </script>
+    <script>
+        //90 2 arrays cannot be equal due to memory location
+        // console.log([] == []);
+    </script>
+    <script>
+        //91
+        // let data = [1, 2, 3].map(num => {
+        //     if (typeof num === 'number') return;
+        //     return num * 2;
+        // });
+        // consle.warn(data);
+    </script>
+    <script>
+        //92
+        // function getInfo(member) {
+        //     member.name = "Huzail";
+        // } const person = { name: "Usairim" };
+        // getInfo(person);
+        // console.log(person);
+    </script>
+    <script>
+        //93 whatever we return we get that
+        // function car() {
+        //     this.make = 'Lamborghini';
+        //     return { make: 'Audi' }
+        // }
+        // const myCar = new car();
+        // console.log(myCar.make);
+    </script>
+    <script>
+        //94
+        // (() => {
+        //     let x = (y = 10)
+        // })();
+        // console.log(typeof x);
+
+    </script>
+    <script>
+        //95
+        // (() => {
+        //     let x = y = 10;
+        // })
+        // console.log(typeof y);
+    </script>
+    <script>
+        // (() => {
+        //     let x = 10;
+        // })();
+        // (() => {
+        //     let x = 10;
+        // })();
+        // console.log(typeof x);
+    </script>
+    <script>
+        //97
+        // (() => {
+        //     let x = y = 10;
+        // })();
+        // (() => {
+        //     let x = y = 20
+        // })();
+        // console.log(y);
+    </script>
+    <script>
+        //98
+        // let x = 100;
+        // (() => {
+        //     var x = 20;
+        // })()
+        // console.log(x);
+    </script>
+    <script>
+        //99
+        // console.warn(!true - true);
+    </script>
+    <script>
+        //100
+        // console.warn(true + + "10");
+    </script>
+</body>
+
+</html>
